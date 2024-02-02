@@ -14,3 +14,10 @@ var highscoreList = document.getElementById('highscore_list')
 var goToStartingPageButton = document.getElementById('go_to_starting_page_button')
 var clearHighscoresButton = document.getElementById('clear_highscores_button')
 var play = document.getElementsByClassName('.play')
+
+//track score and store in variables
+const startingTime = questions.length * 15
+const timePenalty = 10 
+var remainingTime 
+var timer 
+var score 
