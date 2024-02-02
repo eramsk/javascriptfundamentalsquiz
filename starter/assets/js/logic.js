@@ -1,34 +1,16 @@
-var startEl = document.getElementById("start")
-var questionEl = document.getElementById("questions")
-var questionNumber = 0;
-var questionTitleEl = document.getElementById("question-title");
-var button1El = document.getElementById("option1");
-var button2El = document.getElementById("option2");
-var button3El = document.getElementById("option3");
-var button4El = document.getElementById("option4");
-
-button1El.addEventListener("click",checkAnswer); 
-button2El.addEventListener("click",checkAnswer);
-button3El.addEventListener("click",checkAnswer);
-button4El.addEventListener("click",checkAnswer);
-
-startEl.addEventListener("click",function(evt){
-    questionEl.classList.remove("hide")
-    document.getElementById("start-screen").classList.add("hide")
-    renderQuestion();
-})
-
-function renderQuestion(){
-    questionTitleEl.textContent = questionsList[questionNumber].question
-    button1El.textContent = questionsList[questionNumber].choices[0]
-    button2El.textContent = questionsList[questionNumber].choices[1]
-    button3El.textContent = questionsList[questionNumber].choices[2]
-    button4El.textContent = questionsList[questionNumber].choices[3]
-}
-
-function checkAnswer(event){
-    console.log(event.target.textContent)
-    //eval
-     // deduct timer
-     //proceed - 
-}
+// initializa required elements
+var main = document.getElementsByTagName('main')[0]
+var viewHighscoreLink = document.getElementById('view_highscore_link')
+var timeDisplay = document.getElementById('time_display')
+var startQuizButton = document.getElementById('start_quiz_button')
+var questionNumbersBox = document.getElementById('question_numbers_box')
+var questionDisplay = document.getElementById('question_display')
+var answersList = document.getElementById('answer_list')
+var answerFeedback = document.getElementById('feedback')
+var scoreDisplay = document.getElementById('score_display')
+var initialsInput = document.getElementById('initials_input')
+var submitInitialsButton = document.getElementById('submit_initials_button')
+var highscoreList = document.getElementById('highscore_list')
+var goToStartingPageButton = document.getElementById('go_to_starting_page_button')
+var clearHighscoresButton = document.getElementById('clear_highscores_button')
+var play = document.getElementsByClassName('.play')
