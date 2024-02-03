@@ -19,10 +19,11 @@ A code quiz that contains the following requirements:
   * When the game ends, it should display their score and give the user the ability to save their initials and their score.
 
   # Screenshots
-![screenshot1](https://github.com/eramsk/javascriptfundamentalsquiz/blob/main/images/Screenshot1.png?raw=true)
-![screenshot2](https://github.com/eramsk/javascriptfundamentalsquiz/blob/main/images/Screenshot2.png?raw=true)
-![screenshot3](https://github.com/eramsk/javascriptfundamentalsquiz/blob/main/images/Screenshot3.png?raw=true)
-![screenshot4](https://github.com/eramsk/javascriptfundamentalsquiz/blob/main/images/Screenshot4.png?raw=true)
-![screenshot5](https://github.com/eramsk/javascriptfundamentalsquiz/blob/main/images/Screenshot5.png?raw=true)
-![screenshot6](https://github.com/eramsk/javascriptfundamentalsquiz/blob/main/images/Screenshot6.png?raw=true)
-![screenshot6](https://github.com/eramsk/javascriptfundamentalsquiz/blob/main/images/Screenshot7.png?raw=true)
+![screenshot1](assets/images/Screenshot1.png)
+![screenshot2](assets/images/Screenshot2.png)
+![screenshot3](/assets/images/Screenshot3.png)
+![screenshot4](assets/images/Screenshot4.png)
+![screenshot5](assets/images/Screenshot5.png)
+![screenshot6](/assets/images/Screenshot6.png)
+![screenshot7](assets/images/Screenshot7.png)
+
