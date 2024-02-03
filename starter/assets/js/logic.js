@@ -1,23 +1,21 @@
-// initializa required elements
-var main = document.getElementsByTagName('main')[0]
-var viewHighscoreLink = document.getElementById('view_highscore_link')
-var timeDisplay = document.getElementById('time_display')
-var startQuizButton = document.getElementById('start_quiz_button')
-var questionNumbersBox = document.getElementById('question_numbers_box')
-var questionDisplay = document.getElementById('question_display')
-var answersList = document.getElementById('answer_list')
-var answerFeedback = document.getElementById('feedback')
-var scoreDisplay = document.getElementById('score_display')
-var initialsInput = document.getElementById('initials_input')
-var submitInitialsButton = document.getElementById('submit_initials_button')
-var highscoreList = document.getElementById('highscore_list')
-var goToStartingPageButton = document.getElementById('go_to_starting_page_button')
-var clearHighscoresButton = document.getElementById('clear_highscores_button')
-var play = document.getElementsByClassName('.play')
+let timeId = document.querySelector('#time');
+let startBtn = document.querySelector('#start');
+let questionsId = document.querySelector('#questions');
+let choicesId = document.querySelector('#choices');
+let userInitials = document.querySelector('#initials');
+let submitBtn = document.querySelector('#submit');
+let feedbackUser = document.querySelector('#feedback');
 
-//track score and store in variables
-const startingTime = questions.length * 15
-const timePenalty = 10 
-var remainingTime 
-var timer 
-var score 
+let currentQuestion = 0;
+let timerCount = questions.length * 15;
+let timeInterval;
+
+// Start the quiz
+function startQuiz(){
+    let startScreen = document.querySelector('#start-screen');
+    startScreen.style.display = 'none';
+    questionsId.removeAttribute('class');
+    showQuestion();
+    timeInterval = setInterval(startTimer, 1000);
+    startTimer();
+}
