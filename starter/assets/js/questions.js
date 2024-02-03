@@ -1,43 +1,28 @@
-const questions = [
+var questions = [
+  
     {
-        'question': 'String values must be enclosed within ______ when being assigned to variables.',
-        'answers': ['commas','curly brackets','quotes','parentheses'],
-        'correct_index': 2
-    }, {
-        'question': 'A very useful tool used during development and debugging for printing content to the debugger is:',
-        'answers': ['for loops','console.log','terminal / bash','JavaScript'],
-        'correct_index': 1
-    }, {
-        'question': 'Commonly used data types DO NOT include:',
-        'answers': ['alerts','numbers','strings','booleans'],
-        'correct_index': 0
-    }, {
-        'question': 'The condition in an if/else statement is enclosed within ______.',
-        'answers': ['quotes','curly brackets','square brackets','parentheses'],
-        'correct_index': 3
-    }, {
-        'question': 'Which program is used by web clients to view the web pages?',
-        'answers': ['Web browser','Protocol','Web server','Search Engine'],
-        'correct_index': 0
-    }, {
-        'question': 'The ______ attribute is used to identify the values of variables.',
-        'answers': ['text','http-equiv','content','name'],
-        'correct_index': 2
-    }, {
-        'question': 'Which tag is used to identify the keywords describing the site?',
-        'answers': ['Comment tag','Title tag','Meta tag','Anchor tag'],
-        'correct_index': 2
-    }, {
-        'question': 'Which are used with a tag to modify its function?',
-        'answers': ['Files','Functions','Attributes','Documents'],
-        'correct_index': 2
-    }, {
-        'question': 'This is a declaration that IS NOT an html tag.  it is an instruction to the web browser about what version of HTML a web page is written in.',
-        'answers': ['html','doctype','head','body'],
-        'correct_index': 1
-    }, {
-        'question': 'Content information that appears between the oppening and closing ______ tags will show up in a browser view.',
-        'answers': ['body','html','head','table'],
-        'correct_index': 0
-    }, 
-]
+      question: "1. Commonly used data types Do Not include:",
+      answer: ["1.Strings", "2.Booleans", "3.Alerts", "4.Numbers"],
+      correctAnswer: '3.Alerts', 
+    },
+    {
+      question: "2. The condition in an if/else statement is enclosed with _____:",
+      answer: ["1.Quotes", "2.Curly brackets", "3.Parenthesis", "4.Square brackets"],
+      correctAnswer: "2.Curly brackets",
+    },
+    {
+      question: "3. Arrays in JavaScript can be used to store _________:",
+      answer: ["1.Numbers and strings", "2.Other arrays", "3.Booleans", "4.All of the above"],
+      correctAnswer: "4.All of the above",
+    },
+    {
+      question: "4. String values must be enclosed within____ when being assigned to variables:",
+      answer: ["1.Commas", "2.Curly brackets", "3.Quotes", "4.Parenthesis"],
+      correctAnswer: "3.Quotes",
+    },
+    {
+      question: "5. A very useful tool used during development and debugging for printing content to the debugger is:",
+      answer: ["1.JavaScript", "2.Terminal/Bash", "3.For loops", "4.Console.log"],
+      correctAnswer: '2.Terminal/Bash',
+    },
+  ];
