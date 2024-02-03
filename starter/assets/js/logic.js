@@ -40,6 +40,29 @@ soundCorrect.volume = 0.5;
 var soundIncorrect = new Audio("audio/incorrect.wav");
 soundIncorrect.volume = 0.5;
 
-
+// Check if andswer is correct
+function checkAnswer(event) {
+    event.preventDefault();
+    const clickedAnswer = event.target.textContent;
+    if(clickedAnswer === questions[currentQuestion].correctAnswer){
+        currentQuestion++;
+        if(currentQuestion === questions.length){
+            endQuiz();
+        } else {
+            showQuestion();
+            soundCorrect.play();
+        }
+        feedbackUser.textContent = 'Correct ✅';
+             
+    } else {
+        timerCount -= 10;
+        soundIncorrect.play();
+        feedbackUser.textContent = 'Incorrect ❌'; 
+    }
+        feedbackUser.removeAttribute('class', 'hide');
+        setTimeout(function(){
+        feedbackUser.setAttribute('class', 'hide');
+    }, 500);
+}
 
 
