@@ -19,3 +19,18 @@ function startQuiz(){
     timeInterval = setInterval(startTimer, 1000);
     startTimer();
 }
+
+// Show the current question and answers
+function showQuestion() {
+    const questionTitle = document.querySelector('#question-title');
+    questionTitle.textContent = questions[currentQuestion].question;
+    choicesId.innerHTML = '';
+
+    for (let i = 0; i < questions[currentQuestion].answer.length; i++) {
+        const button = document.createElement('button');
+        button.textContent = questions[currentQuestion].answer[i];
+        button.addEventListener('click', checkAnswer);
+        choicesId.appendChild(button);
+    }
+}
+
