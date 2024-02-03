@@ -35,9 +35,9 @@ function showQuestion() {
 }
 
 // Audio
-var soundCorrect = new Audio("sfx/correct.wav");
+var soundCorrect = new Audio("./assets/sfx/correct.wav");
 soundCorrect.volume = 0.5;
-var soundIncorrect = new Audio("sfx/incorrect.wav");
+var soundIncorrect = new Audio("./assets/sfx/incorrect.wav");
 soundIncorrect.volume = 0.5;
 
 // Check if andswer is correct
