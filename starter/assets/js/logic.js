@@ -86,4 +86,18 @@ function endQuiz() {
     questionsId.setAttribute('class', 'hide');
 }
 
+// Save the score with initials
+function saveScore() {
+    const initials = userInitials.value.trim();
 
+    if(initials !== ''){
+    let existingScore = JSON.parse(localStorage.getItem('highscore')) || [];
+    let newScore = {
+        score: timerCount,
+        userInitials: initials,
+    }
+    existingScore.push(newScore);
+    localStorage.setItem('highscore', JSON.stringify(existingScore));
+    window.location.href = 'highscores.html';
+    }
+}
