@@ -65,4 +65,14 @@ function checkAnswer(event) {
     }, 500);
 }
 
+// Timer Function
+function startTimer() {
+    timeId.textContent = timerCount;
+    timerCount--;
+    if(timerCount <= 0){
+        endQuiz();
+    }
+}
+
+
 
