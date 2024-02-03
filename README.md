@@ -19,11 +19,11 @@ A code quiz that contains the following requirements:
   * When the game ends, it should display their score and give the user the ability to save their initials and their score.
 
   # Screenshots
-![screenshot1](assets/images/Screenshot1.png)
-![screenshot2](assets/images/Screenshot2.png)
-![screenshot3](/assets/images/Screenshot3.png)
-![screenshot4](assets/images/Screenshot4.png)
-![screenshot5](assets/images/Screenshot5.png)
-![screenshot6](/assets/images/Screenshot6.png)
-![screenshot7](assets/images/Screenshot7.png)
+![screenshot1](starter/assets/images/Screenshot1.png)
+![screenshot2](starter/assets/images/Screenshot2.png)
+![screenshot3](starter/assets/images/Screenshot3.png)
+![screenshot4](starter/assets/images/Screenshot4.png)
+![screenshot5](starter/assets/images/Screenshot5.png)
+![screenshot6](starter/assets/images/Screenshot6.png)
+![screenshot7](starter/assets/images/Screenshot7.png)
 
